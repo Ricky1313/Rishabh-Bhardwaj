@@ -1,1 +1,162 @@
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Rishabh Bhardwaj - Portfolio</title>
+            <style>
+              /* General styling for the navigation bar */
+              nav {
+                background-color: #333; /* Dark background */
+                padding: 10px;
+              }
+
+              /* Styling for the unordered list (removes bullets) */
+              nav ul {
+                list-style-type: none; /* Removes default list styling */
+                margin: 0;
+                padding: 0;
+                display: flex; /* Makes the list items appear horizontally */
+                justify-content: center; /* Centers the navigation links */
+              }
+
+              /* Styling for the list items */
+              nav ul li {
+                margin: 0 15px; /* Adds space between the items */
+              }
+
+              /* Styling for the anchor links */
+              nav ul li a {
+                color: white; /* White text color */
+                text-decoration: none; /* Removes underline */
+                font-size: 18px; /* Font size */
+                padding: 10px;
+                display: block;
+              }
+
+              /* Hover effect for links */
+              nav ul li a:hover {
+                background-color: #575757; /* Lighten background on hover */
+                border-radius: 5px; /* Rounded corners on hover */
+              }
+
+              /* Hide all sections by default */
+              .page {
+                display: none;
+              }
+              /* Make the current page visible */
+              .active {
+                display: block;
+              }
+            </style>
+            <script>
+              // Function to show a particular page
+              function showPage(page) {
+                // Hide all pages
+                var pages = document.querySelectorAll('.page');
+                pages.forEach(function(p) {
+                  p.classList.remove('active');
+                });
+                // Show the selected page
+                document.getElementById(page).classList.add('active');
+              }
+            </script>
+          </head>
+          <body>
+
+            <!-- Navigation Bar -->
+            <header>
+               
+              <h1>Rishabh Bhardwaj</h1>
+              
+              <nav>
+                <ul>
+                  <li><button onclick="showPage('home')">Home</button></li>
+                  <li><button onclick="showPage('about')">About Me</button></li>
+                  <li><button onclick="showPage('skills')">Skills</button></li>
+                  <li><button onclick="showPage('portfolio')">Portfolio</button></li>
+                  <li><button onclick="showPage('contact')">Contact</button></li>
+                </ul>
+              </nav>
+            </header>
+
+            <!-- Home Section -->
+            <section id="home" class="page active">
+              <h2> </h2>
+              <img src="mypic.jpeg" alt="Rishabh's Picture" width="150">
+              <p>With over 9+ years of experience and proven knowledge of accounting expertise, bookkeeping, accounts payable, accounts receivable, and taxation I have built a reputation for enhancing the performance of finance departments.</p>
+              
+              <h2>Quick Links:</h2>
+              <ul>
+                <li><a href="Resume - Rishabh Bhardwaj.pdf" target="_blank">Download Resume (PDF)</a></li>
+                <li><a href="Resume - Rishabh Bhardwaj.docx" target="_blank">Download Resume (Word)</a></li>
+              </ul>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="about" class="page">
+              <h2>Introduction</h2>
+              <p>I am responsible for handling accounts payable and indirect taxation while managing a range of finance & accounting-related tasks. I also analyze financial information to enable informed decision-making at the Senior Management level in quarterly business reviews.</p>
+              <img src="image2.jpg" alt="Profile" width="500">
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="page">
+              <h2> </h2>
+               <img src="image3.png" alt="skills" width="600">
+              <h2>Technical Skills</h2>
+              <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Vue.js</li>
+                <li>Node.js, Express</li>
+                <li>Git & GitHub</li>
+              </ul>
+              <h2>Tools</h2>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Chrome Developer Tools</li>
+                <li>Postman</li>
+              </ul>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="page">
+              <h2> </h2>
+               <img src="image4.png" alt="skills" width="500">
+              <h2>My Projects</h2>
+              <table border="1">
+                <tr>
+                  <th>Project Name</th>
+                  <th>Description</th>
+                  <th>Link</th>
+                </tr>
+                <tr>
+                  <td>Project 1</td>
+                  <td>A web app built using React</td>
+                  <td><a href="https://example.com" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                  <td>Project 2</td>
+                  <td>A personal blog created with Node.js</td>
+                  <td><a href="https://example.com" target="_blank">View Project</a></td>
+                </tr>
+              </table>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="page">
+              <h2> </h2>
+               <img src="image5.jpg" alt="skills" width="600">
+              <h2>Get in Touch</h2>
+              <p>If you'd like to collaborate or just want to say hello, feel free to reach out!</p>
+              <p>Email: <a href="mailto:rishabh@gmail.com">rishabh@hmail.com</a></p>
+              </section>
+
+            <!-- Footer -->
+            <footer>
+              <p>Copyright © 2025 Rishabh Bhardwaj</p>
+            </footer>
+
+          </body>
+          </html>
 
